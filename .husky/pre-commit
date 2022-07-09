@@ -1,0 +1,19 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo 'Testing before comitting...'
+
+yarn run test-all ||
+(
+    false;
+)
+
+echo 'Building...'
+
+yarn run build ||
+(
+    false;
+)
+
+echo 'You are able to commit this'
+npx lint-staged
