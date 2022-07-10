@@ -12,7 +12,7 @@ const Home: NextPage = () => (
     </Head>
 
     <main className={styles.main}>
-      <h1 className={styles.title}>
+      <h1 className="text-8xl text-red-500 font-primary">
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
 
