@@ -1,48 +1,77 @@
 import type { NextPage } from 'next';
-import Layout from '../components/Layout';
-import Footer from '../components/Footer';
-import ProjectCard from '../components/ProjectCard';
+import Image from 'next/image';
+import { BsTwitter, BsGithub, BsEnvelopeFill } from 'react-icons/bs';
+import useMobile from '../hooks/useMobile';
 
-const Home: NextPage = () => (
-  <Layout>
-    <p className="text-primary text-2xl">hello, world!</p>
-    <h1 className="text-secondary mt-4 w-full">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis,
-        obcaecati!
-      </p>
-    </h1>
-    <p className="text-secondary mt-4">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium
-      illum voluptate architecto voluptas eum minima, nemo exercitationem
-      asperiores reprehenderit.
-    </p>
-    <p className="text-secondary mt-4">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. At minima
-      blanditiis itaque earum, maxime quidem voluptates architecto molestiae
-      expedita assumenda accusamus id quod sapiente autem ratione officiis
-    </p>
-    <p className="text-secondary mt-4">
-      quibusdam dolores consequuntur iure eum et! Itaque, officia porro sequi in
-      facilis officiis atque neque perferendis est reprehenderit rerum excepturi
-      animi fuga cupiditate!
-    </p>
+const Home: NextPage = () => {
+  const { isMobile } = useMobile();
 
-    <h2 className="text-primary text-2xl mt-[7.3125rem]">
-      things i&#39;ve built:{' '}
-    </h2>
-    <div className="min-h-fit mt-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-[4.75rem]">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+  return (
+    <div className="min-h-screen font-primary">
+      <div className="grid grid-cols-1 lg:grid-cols-12 grid-rows-9 h-auto lg:h-screen">
+        <div className="flex row-span-4 col-span-1 lg:col-span-7 border-b border-black">
+          <div className="my-auto w-full px-4 py-8 lg:px-[7.1875rem]">
+            <h1 className="text-[1.5rem] font-primary">arcetros</h1>
+            <h1 className="text-gray-400 mt-2 text-base font-secondary">
+              <span>Front End/UI UX Developer</span>
+            </h1>
+            <div className="flex gap-x-10 mt-12 lg:mt-[6.5625rem] font-secondary">
+              <p>ABOUT</p>
+              <p>PROJECT</p>
+              <p>CONTACT</p>
+            </div>
+          </div>
+        </div>
+        <div className="row-span-6 col-span-1 lg:col-span-4 border-b border-r border-l border-black">
+          <div className="relative min-h-[40vh] lg:min-h-0 h-full w-full">
+            <Image
+              src="/download.jpg"
+              alt="Photo"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </div>
+        <div className="order-last lg:order-none row-span-4 col-span-1 lg:col-span-1 border-b border-black my-4 lg:my-0">
+          <div className="flex mx-auto h-full gap-x-5 items-center px-4 py-8 lg:py-0 lg:px-0">
+            <div className="block lg:hidden">My Socials: </div>
+            <div className="flex gap-x-5 mx-0 lg:mx-auto flex-row lg:flex-col h-full justify-evenly">
+              {isMobile && <span className="underline">Twitter</span>}
+              {!isMobile && (
+                <BsTwitter className="mx-auto w-6 lg:w-12 h-6 lg:h-12  text-[#484848]" />
+              )}
+              {isMobile && <span className="underline">Github</span>}
+              {!isMobile && (
+                <BsGithub className="mx-auto w-6 lg:w-12 h-6 lg:h-12 text-[#484848]" />
+              )}
+              {isMobile && <span className="underline">Email</span>}
+              {!isMobile && (
+                <BsEnvelopeFill className="mx-auto w-6 lg:w-12 h-6 lg:h-12 text-[#484848]" />
+              )}
+            </div>
+          </div>
+        </div>
+        <div className="flex row-span-5 col-span-1 lg:col-span-7 border-b border-black lg:border-none">
+          <div className="px-4 my-8 lg:px-[7.1875rem] lg:my-auto w-full ">
+            <p className="text-3xl font-secondary">
+              Solving real user problems and create thoughtful and beautiful
+              experiences are root of this work
+            </p>
+          </div>
+        </div>
+        <div className="flex border-l-0 lg:border-l border-b lg:border-b-0 border-black row-span-3 col-span-1 order-2 lg:order-last lg:col-span-4">
+          <div className="container font-primary px-4 my-8 lg:my-auto w-full ">
+            <p>Hello! my name is Mufid Arkanu</p>
+            <p className="mt-2">
+              My love of beautiful websites made me curious about how they were
+              made. I adore building accessible, responsive and fast code. Read
+              more
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <Footer />
-  </Layout>
-);
+  );
+};
 
 export default Home;

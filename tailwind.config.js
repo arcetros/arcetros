@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -12,11 +10,13 @@ module.exports = {
         primary: '#CA6B63',
         secondary: '#4D4A36'
       },
+      gridTemplateRows: { 9: 'repeat(9, minmax(0, 1fr))' },
       boxShadow: {
         box: '10px 10px 0px 0px rgba(0, 0, 0, 1)'
       },
       fontFamily: {
-        primary: ['IBM Plex Mono', ...defaultTheme.fontFamily.mono]
+        primary: ['Grotesk Regular', 'Grotesk Medium', 'Grotesk Bold'],
+        secondary: ['Lausanne']
       }
     }
   },
