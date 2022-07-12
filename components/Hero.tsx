@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex row-span-5 col-span-1 lg:col-span-7 border-b border-black lg:border-none">
-        <div className="px-4 my-8 lg:px-[7.1875rem] lg:my-auto w-full ">
+        <div className="px-4 my-8 lg:px-[7.1875rem] w-full lg:my-auto">
           <p className="text-3xl font-secondary">
             Solving real user problems and create thoughtful and beautiful
             experiences are root of this work
@@ -59,7 +59,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex border-l-0 lg:border-l border-b lg:border-b-0 border-black row-span-3 col-span-1 order-2 lg:order-last lg:col-span-4">
-        <div className="container font-primary px-4 my-8 lg:my-auto w-full ">
+        <div className="container font-primary px-4 my-8 lg:m-auto">
           <p>Hello! my name is Mufid Arkanu</p>
           <p className="mt-2">
             My love of beautiful websites made me curious about how they were
