@@ -5,23 +5,27 @@
 @font-face {
   font-family: 'Lausanne';
   font-weight: 400;
-  src: url('/fonts/Lausanne-Regular.ttf');
+  src: url('/fonts/Lausanne-Regular.otf');
+  font-display: block;
 }
 
 @font-face {
   font-family: 'Grotesk Regular';
   font-weight: 400;
   src: url('/fonts/NHaasGroteskTXPro-55Rg.ttf');
+  font-display: block;
 }
 @font-face {
   font-family: 'Grotesk Medium';
   font-weight: 600;
   src: url('/fonts/NHaasGroteskTXPro-65Md.ttf');
+  font-display: block;
 }
 @font-face {
   font-family: 'Grotesk Bold';
   font-weight: 800;
   src: url('/fonts/NHaasGroteskTXPro-75Bd.ttf');
+  font-display: block;
 }
 
 html,

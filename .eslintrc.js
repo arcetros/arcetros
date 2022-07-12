@@ -25,6 +25,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': ['off'],
     'react/require-default-props': ['off'],
     'import/prefer-default-export': ['off'],
+    'arrow-body-style': 'off',
     'object-curly-newline': ['off'],
     'react/no-array-index-key': ['off'],
     'react/function-component-definition': [

@@ -2,7 +2,9 @@ import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
+  <div className="font-primary">
+    <Component {...pageProps} />
+  </div>
 );
 
 export default MyApp;
