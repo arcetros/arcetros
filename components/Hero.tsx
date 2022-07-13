@@ -56,6 +56,26 @@ const Hero = () => {
             Solving real user problems and create thoughtful and beautiful
             experiences are root of this work
           </p>
+          <div className="flex mt-12 gap-x-4">
+            <div className="w-fit relative group scale-[1.01] hover:scale-100 transition duration-300 ease-in-out h-full">
+              <button
+                type="button"
+                className="bg-slate-600 text-gray-50 font-medium font-secondary rounded-md w-full border-slate-700 solid border p-3"
+              >
+                GET IN TOUCH
+              </button>
+              <div className="px-4 py-2 bg-slate-800 rounded-md absolute w-full h-full top-0 -z-10 translate-y-1 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition duration-200 ease-in-out" />
+            </div>
+            <div className="w-fit relative group scale-[1.01] hover:scale-100 transition duration-300 ease-in-out h-full">
+              <button
+                type="button"
+                className="bg-white text-slate-800 font-medium font-secondary rounded-md w-full border-slate-800 solid border p-3"
+              >
+                SEE PROJECTS
+              </button>
+              <div className="px-4 py-2 bg-slate-800 rounded-md absolute w-full h-full top-0 -z-10 translate-y-1 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition duration-200 ease-in-out" />
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex border-l-0 lg:border-l border-b lg:border-b-0 border-black row-span-3 col-span-1 order-2 lg:order-last lg:col-span-4">

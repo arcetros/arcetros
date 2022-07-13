@@ -49,10 +49,8 @@ const Projects = () => {
           <h2 className="text-[1.125rem] lg:text-4xl">FEATURED PROJECTS</h2>
           <span className="underline text-xs lg:text-[1.5rem]">SEE ALL</span>
         </div>
-        <div className="border-b border-black">
-          <FeautredItem />
-          <FeautredItem />
-        </div>
+        <FeautredItem />
+        <FeautredItem />
       </div>
     </div>
   );
