@@ -7,7 +7,7 @@ const Hero = () => {
   const { isMobile } = useMobile();
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 grid-rows-9 h-auto lg:h-screen">
-      <div className="flex row-span-4 col-span-1 lg:col-span-7 border-b border-black">
+      <div className="relative flex row-span-4 col-span-1 lg:col-span-7 border-b border-black">
         <div className="my-auto w-full px-4 py-8 lg:px-[7.1875rem]">
           <h1 className="text-[1.5rem] font-primary">arcetros</h1>
           <h1 className="text-gray-400 mt-2 text-base font-secondary">

@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 const Skills = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 grid-rows-9 h-auto lg:h-screen border-t-none lg:border-t border-black">
-      <div className="flex row-span-full col-span-1 lg:col-span-4">
-        <div className="m-auto relative min-h-[40vh] lg:min-h-0 h-[70%] w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-12 min-h-fit lg:min-h-screen border-t-none lg:border-t border-black">
+      <div className="hidden lg:flex col-span-1 lg:col-span-4">
+        <div className="m-auto relative min-h-[40vh] h-[70%] w-full">
           <Image
             src="/assembly.png"
-            alt="Photo"
+            alt="Test"
             layout="fill"
             objectFit="contain"
             className="p-8"
@@ -16,15 +16,25 @@ const Skills = () => {
           />
         </div>
       </div>
-      <div className="flex row-span-full col-span-1 border-l-none lg:border-l border-black lg:col-span-8">
+      <div className="flex col-span-1 border-l-none lg:border-l border-black lg:col-span-8">
         <div className="flex flex-col lg:flex-row px-4 py-8 items-start gap-x-16 m-auto lg:px-[7.3125rem]">
           <h2 className="text-4xl">Skills</h2>
-          <div className="flex flex-col gap-y-[4.375rem]">
+          <div className="flex flex-col mt-8 lg:mt-0 gap-y-8 lg:gap-y-[4.375rem]">
             <p className="mt-2 lg:mt-0">
               Digital projects thrive when designers understand how they will be
               built. Just as an architect understands how a structure is
               created, the same should be true on the web.
             </p>
+            <div className="block lg:hidden m-auto relative min-h-[40vh] h-[70%] w-full">
+              <Image
+                src="/assembly.png"
+                alt="Test"
+                layout="fill"
+                objectFit="contain"
+                className="p-8"
+                priority
+              />
+            </div>
             <div className="container">
               <div className="flex justify-between items-center border-b border-black">
                 <h3 className="font-secondary text-2xl">DIGITAL</h3>

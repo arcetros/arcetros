@@ -14,7 +14,7 @@ const Socials = ({ icon, text }: ISocials) => (
 );
 
 const Footer = () => (
-  <footer className="mt-[9.875rem]">
+  <footer className="my-8 px-4 lg:px-[7.1875rem]">
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-y-4">
       <div>
         <p>
