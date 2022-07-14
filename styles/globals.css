@@ -37,3 +37,8 @@ body {
 * {
   box-sizing: border-box;
 }
+
+a {
+  color: #ecb365;
+  text-decoration: none;
+}
