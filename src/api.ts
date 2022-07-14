@@ -8,6 +8,9 @@ export interface ProjectMeta {
   slug: string;
   title: string;
   stacks: string[];
+  code: string;
+  live: string;
+  img: string;
 }
 
 interface Project {
@@ -39,7 +42,10 @@ export const getProjectFromSlug = (slug: string): Project => {
       slug,
       introduction: data.introduction ?? '',
       title: data.title ?? slug,
-      stacks: (data.stacks ?? []).sort()
+      stacks: (data.stacks ?? []).sort(),
+      code: data.code ?? 'Source code are privated',
+      live: data.live ?? 'Not Available Yet',
+      img: data.img ?? ''
     }
   };
 };
