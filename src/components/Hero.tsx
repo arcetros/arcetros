@@ -1,5 +1,4 @@
-import React from 'react';
-import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { FiTwitter, FiGithub, FiInbox } from 'react-icons/fi';
 import useMobile from '../hooks/useMobile';
 
@@ -8,8 +7,13 @@ const Hero = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 grid-rows-9 h-auto lg:h-screen">
       <div className="relative flex row-span-4 col-span-1 lg:col-span-7">
-        <div
-          style={{ width: '100%' }}
+        <motion.div
+          transition={{
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1.6
+          }}
+          initial={{ width: '0%' }}
+          animate={{ width: '100%' }}
           className="absolute h-[1px] bottom-0 bg-black"
         />
         <div className="my-auto w-full px-4 lg:px-[7.1875rem]">
@@ -25,31 +29,48 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative row-span-6 col-span-1 lg:col-span-4 ">
-        <div
-          style={{ width: '100%' }}
+        <motion.div
+          transition={{
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1.6
+          }}
+          initial={{ width: '0%' }}
+          animate={{ width: '100%' }}
           className="absolute h-[0.5px] -bottom-[0.5px] right-0 bg-black z-10"
         />
-        <div
-          style={{ height: '100%' }}
-          className="absolute w-[0.5px] bottom-0 bg-black z-10 hidden lg:block"
+        <motion.div
+          transition={{
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1.6
+          }}
+          initial={{ height: '0%' }}
+          animate={{ height: '100%' }}
+          className="absolute w-[0.5px] top-0 bg-black z-10 hidden lg:block"
         />
-        <div
-          style={{ height: '100%' }}
+        <motion.div
+          transition={{
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1.6
+          }}
+          initial={{ height: '0%' }}
+          animate={{ height: '100%' }}
           className="absolute w-[0.5px] top-0 right-0 bg-black z-10"
         />
-        <div className="relative min-h-[40vh] lg:min-h-0 h-full w-full z-0">
-          <Image
-            src="/download.jpg"
-            alt="Photo"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-        </div>
+        <motion.img
+          layoutId="heroImg"
+          src="/download.jpg"
+          alt="adsf"
+          className="h-full w-full object-cover"
+        />
       </div>
       <div className="relative order-last lg:order-none row-span-4 col-span-1 lg:col-span-1 my-4 lg:my-0">
-        <div
-          style={{ width: '100%' }}
+        <motion.div
+          transition={{
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1.6
+          }}
+          initial={{ width: '0%' }}
+          animate={{ width: '100%' }}
           className="absolute h-[0.5px] -bottom-[0.5px] right-0 bg-black z-10"
         />
         <div className="flex mx-auto h-full gap-x-5 items-center px-4 py-8 lg:py-0 lg:px-0">
@@ -99,8 +120,13 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative flex row-span-3 col-span-1 order-2 lg:order-last lg:col-span-4">
-        <div
-          style={{ height: '100%' }}
+        <motion.div
+          transition={{
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1.6
+          }}
+          initial={{ height: '0%' }}
+          animate={{ height: '100%' }}
           className="absolute w-[0.5px] bottom-0 left-0 bg-black z-10 hidden lg:block"
         />
         <div className="container font-primary px-4 my-8 lg:m-auto">
