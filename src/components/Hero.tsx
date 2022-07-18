@@ -47,7 +47,7 @@ const socials = [
 const Hero = () => {
   const { isMobile } = useMobile();
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 grid-rows-9 h-auto lg:h-screen">
+    <div className="grid grid-cols-1 lg:grid-cols-12 grid-rows-9 h-auto lg:h-screen lg:max-screen">
       <div className="relative flex row-span-4 col-span-1 lg:col-span-7">
         <motion.div
           transition={{
@@ -132,7 +132,7 @@ const Hero = () => {
           }}
           initial={{ width: '0%' }}
           animate={{ width: '100%' }}
-          className="absolute h-[0.5px] -bottom-[0.5px] right-0 bg-black z-10"
+          className="absolute h-[0.5px] -bottom-[0.5px] right-0 bg-black z-10 hidden lg:block"
         />
         <div className="flex mx-auto h-full gap-x-5 items-center px-4 py-8 lg:py-0 lg:px-0">
           <div className="block lg:hidden">My Socials: </div>
