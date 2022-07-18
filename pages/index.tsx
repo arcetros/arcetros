@@ -18,27 +18,6 @@ const Home = ({ projects }: { projects: ProjectMeta[] }) => {
     }
   };
 
-  const item = {
-    hidden: { opacity: 0, y: 200 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        ease: [0.6, 0.01, -0.05, 0.95],
-        duration: 1.6,
-        delay: 0.75
-      }
-    },
-    exit: {
-      opacity: 0,
-      y: -200,
-      transition: {
-        ease: 'easeInOut',
-        duration: 0.8
-      }
-    }
-  };
-
   const itemMain = {
     hidden: { opacity: 0, y: 200 },
     show: {
@@ -58,7 +37,6 @@ const Home = ({ projects }: { projects: ProjectMeta[] }) => {
           {isLoading ? (
             <motion.div
               variants={container}
-              onAnimationComplete={() => setIsLoading(false)}
               initial="hidden"
               animate="show"
               exit="exit"
@@ -71,13 +49,11 @@ const Home = ({ projects }: { projects: ProjectMeta[] }) => {
                 animate="show"
                 exit="exit"
                 alt="Photo"
+                onAnimationComplete={() => setIsLoading(false)}
                 layoutId="heroImg"
                 className="w-32 h-32 z-0"
                 transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
               />
-              <motion.h1 variants={item} className="font-headline mt-2">
-                hello :)
-              </motion.h1>
             </motion.div>
           ) : (
             <>
