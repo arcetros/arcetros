@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <div className="font-primary scroll-smooth overflow-x-hidden">
+  <div className="font-primary scroll-smooth">
     <Component {...pageProps} />
   </div>
 );

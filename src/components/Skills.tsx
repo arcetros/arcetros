@@ -118,7 +118,7 @@ const Skills = () => {
               </p>
             </motion.div>
             <motion.div variants={item} className="container">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center border-b border-black">
                 <h3 className="font-secondary text-2xl">DEVELOPMENT</h3>
                 <span>1</span>
               </div>
