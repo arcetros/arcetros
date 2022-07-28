@@ -36,7 +36,10 @@ const FeautredItem = ({ projects }: { projects: ProjectMeta[] }) => {
   return (
     <>
       {projects.map(project => (
-        <div className="relative grid grid-cols-1 lg:grid-cols-12  h-auto lg:min-h-[50vh]">
+        <div
+          key={project.slug}
+          className="relative grid grid-cols-1 lg:grid-cols-12  h-auto lg:min-h-[50vh]"
+        >
           <motion.div
             initial={{ width: '0%' }}
             viewport={{ once: true }}

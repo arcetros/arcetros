@@ -17,6 +17,7 @@
   "dependencies": {
     "@mdx-js/react": "^2.1.2",
     "@tailwindcss/typography": "^0.5.4",
+    "@types/resize-observer-browser": "^0.1.7",
     "autoprefixer": "^10.4.7",
     "fast-glob": "^3.2.11",
     "framer-motion": "^6.5.1",
@@ -31,7 +32,8 @@
     "react-icons": "^4.4.0",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-highlight": "^5.0.2",
-    "rehype-slug": "^5.0.1"
+    "rehype-slug": "^5.0.1",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
     "@types/glob": "^7.2.0",

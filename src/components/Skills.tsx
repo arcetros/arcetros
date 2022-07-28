@@ -105,7 +105,7 @@ const Skills = () => {
                 className="p-8 object-cover"
               />
             </div>
-            <motion.div variants={item} className="container">
+            <motion.div variants={item}>
               <div className="flex justify-between items-center border-b border-black">
                 <h3 className="font-secondary text-2xl">DIGITAL</h3>
                 <span>1</span>
@@ -117,7 +117,7 @@ const Skills = () => {
                 I&#39;m passionate about interaction animations.
               </p>
             </motion.div>
-            <motion.div variants={item} className="container">
+            <motion.div variants={item}>
               <div className="flex justify-between items-center border-b border-black">
                 <h3 className="font-secondary text-2xl">DEVELOPMENT</h3>
                 <span>1</span>

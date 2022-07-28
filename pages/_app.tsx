@@ -1,10 +1,11 @@
 import type { AppProps } from 'next/app';
+import { Container } from '@/src/components/Layout';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <div className="font-primary scroll-smooth">
+  <Container>
     <Component {...pageProps} />
-  </div>
+  </Container>
 );
 
 export default MyApp;
