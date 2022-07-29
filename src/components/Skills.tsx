@@ -98,7 +98,7 @@ const Skills = () => {
               built. Just as an architect understands how a structure is
               created, the same should be true on the web.
             </p>
-            <div className="block lg:hidden m-auto relative min-h-[40vh] h-[70%] w-full">
+            <div className="block lg:hidden m-auto relative min-h-[40vh] h-[70%]">
               <img
                 src="/assembly.png"
                 alt="Test"
